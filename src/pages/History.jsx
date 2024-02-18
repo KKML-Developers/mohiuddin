@@ -28,40 +28,12 @@ const About = () => {
     if (loading) { return <Loading /> }
     const history = data?.history;
     const seoProps = {
-        title: 'History of | Mostafa Jamal',
-        description: "Explore the rich history and visionary leadership of Mr. Mohiuddin Ahmed, the founder of Khoshroz Kitab Mahal and NDC Auto Brick. Discover his inspiring message emphasizing entrepreneurship, environmental sustainability, and collaboration. Learn about the journey of Mr. Mostafa Jafir Mohiuddin, Deputy Managing Director, and Mr. Mostafa Akhter Mohiuddin, Chairman, as they continue the legacy of innovation and community impact.",
-        name: "Mostafa Jamal Mohiuddin",
-        tags: [
-            "Mostafa Jamal Mohiuddin",
-            "Managing Director",
-            "Khoshroz Kitab Mahal",
-            "Magura Group",
-            "NDC Auto Brick",
-            "Magura Paper Mills Ltd",
-            "Bangladesh Monospool Paper Manufacturing Company Ltd",
-            "Paper Processing & Packaging Ltd",
-            "Jatiya Mudran",
-            "Business Leader",
-            "Entrepreneurship",
-            "Leadership Skills",
-            "Business Acumen",
-            "Community Involvement",
-            "Bangladesh Business",
-            "Leadership Excellence",
-            "Visionary Leader",
-            "Corporate Management",
-            "Bangladesh Economy",
-            "Business Ventures",
-            "Community Impact"
-        ],
+        title: 'History of | Mohiuddin Ahmed',
+        description: "Discover the inspiring vision of Mohiuddin Ahmad, the founder of KKML, through his remarkable commitment to shaping a brighter future for Bangladesh. Ahmad's dedication to fostering employment and championing environmental sustainability stands as a beacon of commendable leadership. Despite challenges, he has forged multiple thriving enterprises, showcasing his unwavering resolve and entrepreneurial vigor. Notably, his collaboration with esteemed organizations such as UNDP and ADB culminated in the establishment of a pollution-free brick factory, exemplifying the transformative potential of business in environmental stewardship.",
+        name: "Mohiuddin Ahmed",
+        tags: ["Mohiuddin Ahmed", "KKML founder", "Bangladesh visionary", "entrepreneurship", "employment opportunities", "environmental sustainability", "pollution-free brick factory", "UNDP partnership", "ADB collaboration"],
         type: 'website',
-        image: 'https://res.cloudinary.com/dfaw271y6/image/upload/v1705914737/MD-sir_k3wop8.jpg',
-        socialLinks: [
-            {
-                icon: 'brands-facebook',
-                link: 'https://www.facebook.com/profile.php?id=100004437858898',
-            }
-        ],
+        image: 'https://res.cloudinary.com/dfaw271y6/image/upload/v1708241872/founder_sir2_uicb0k.jpg',
     };
     return (
         <>

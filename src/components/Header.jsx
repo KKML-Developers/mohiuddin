@@ -57,7 +57,7 @@ const Header = () => {
                             ))}
                         </ul>
                     </nav>
-                    <div className="header__social">
+                    {/* <div className="header__social">
                         <ul className="header__social--icons list-unstyled">
                             {headerContent?.social.map((socialItem, index) => (
                                 <li key={index}>
@@ -67,7 +67,7 @@ const Header = () => {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </header>

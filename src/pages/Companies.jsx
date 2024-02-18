@@ -28,39 +28,12 @@ const Companies = () => {
     if (loading) { return <Loading /> }
     const { company } = data;
     const seoProps = {
-        title: 'Companies | Mostafa Jamal',
-        description: "Explore the diverse ventures and benevolent services offered by the Khoshroz Group under the leadership of Mostafa Jamal Mohiuddin. Learn about the group's commitment to societal betterment and economic development through industries spanning food, clothing, housing, education, and healthcare.",
-        name: "homeContent.title",
+        title: 'Company | Mohiuddin Ahmed',
+        description: "Discover the inspiring vision of Mohiuddin Ahmad, the founder of KKML, through his remarkable commitment to shaping a brighter future for Bangladesh. Ahmad's dedication to fostering employment and championing environmental sustainability stands as a beacon of commendable leadership. Despite challenges, he has forged multiple thriving enterprises, showcasing his unwavering resolve and entrepreneurial vigor. Notably, his collaboration with esteemed organizations such as UNDP and ADB culminated in the establishment of a pollution-free brick factory, exemplifying the transformative potential of business in environmental stewardship.",
+        name: 'Mohiuddin Ahmed',
+        tags: ["Mohiuddin Ahmad", "KKML founder", "Bangladesh visionary", "entrepreneurship", "employment opportunities", "environmental sustainability", "pollution-free brick factory", "UNDP partnership", "ADB collaboration"],
         type: 'website',
-        image: 'https://res.cloudinary.com/dfaw271y6/image/upload/v1705914737/MD-sir_k3wop8.jpg',
-        socialLinks: [
-            {
-                icon: 'brands-facebook',
-                link: 'https://www.facebook.com/profile.php?id=100004437858898',
-            }
-
-        ],
-        tags: [
-            "Khoshroz Group",
-            "Khoshroz Group Limited",
-            "Khoshroz Kitab Mahal",
-            "Khoshroz Kitab Mahal Limited",
-            "National Development Company Limited",
-            "National Development Company Limited",
-            "Jatiya Mudran",
-            "Jatiya Mudran Limited",
-            "Magura Agriculture Park Limited",
-            "Magura Agriculture Park Limited",
-            "E-Stylze fashion e-commerce",
-            "E-stylze Fashion Limited",
-            "Dream International Limited",
-            "Dream International Limited",
-            "Societal Betterment",
-            "Economic Development",
-            "Bangladesh Industries",
-            "Khoshroz Group Ventures",
-            "Multi-faceted Entity",
-        ],
+        image: "https://res.cloudinary.com/dfaw271y6/image/upload/v1708241872/founder_sir2_uicb0k.jpg",
     };
 
     return (
