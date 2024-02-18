@@ -27,7 +27,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: "ftp.mohiuddinahahmad.com"
-          username: "mohiuddin2"
+          username: "mohiuddin2@mohiuddinahahmad.com"
           password: "${{ secrets.FTP_2 }}"
           protocol: "ftp"
           local-dir: ./dist/
