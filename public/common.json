@@ -1,0 +1,28 @@
+{
+    "headerContent": {
+        "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1705831800/DMD_website/mm-logo-300_gbi4ye.png",
+        "logoAlt": "Khoshroz Kitab Mahal - Mostafa Jamal Mohiuddin",
+        "url": "/",
+        "nav": [
+            {
+                "name": "Home",
+                "url": "/"
+            },
+            {
+                "name": "History",
+                "url": "/history"
+            },
+            {
+                "name": "Companies",
+                "url": "/companies"
+            }
+        ],
+        "social": [
+            {
+                "icon": "fi-brands-facebook",
+                "link": "https://www.facebook.com/profile.php?id=100004437858898",
+                "name": "Mr. Mostafa Jamal's Facebook"
+            }
+        ]
+    }
+}

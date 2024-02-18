@@ -1,0 +1,185 @@
+.loader {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background;
+}
+
+#fountainG {
+    position: relative;
+    width: 228px;
+    height: 28px;
+    margin: auto;
+}
+
+.fountainG {
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 28px;
+    height: 28px;
+    animation-name: bounce_fountainG;
+    -o-animation-name: bounce_fountainG;
+    -ms-animation-name: bounce_fountainG;
+    -webkit-animation-name: bounce_fountainG;
+    -moz-animation-name: bounce_fountainG;
+    animation-duration: 0.585s;
+    -o-animation-duration: 0.585s;
+    -ms-animation-duration: 0.585s;
+    -webkit-animation-duration: 0.585s;
+    -moz-animation-duration: 0.585s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    transform: scale(0.3);
+    -o-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    border-radius: 18px;
+    -o-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+}
+
+#fountainG_1 {
+    left: 0;
+    animation-delay: 0.236s;
+    -o-animation-delay: 0.236s;
+    -ms-animation-delay: 0.236s;
+    -webkit-animation-delay: 0.236s;
+    -moz-animation-delay: 0.236s;
+}
+
+#fountainG_2 {
+    left: 28px;
+    animation-delay: 0.2925s;
+    -o-animation-delay: 0.2925s;
+    -ms-animation-delay: 0.2925s;
+    -webkit-animation-delay: 0.2925s;
+    -moz-animation-delay: 0.2925s;
+}
+
+#fountainG_3 {
+    left: 57px;
+    animation-delay: 0.349s;
+    -o-animation-delay: 0.349s;
+    -ms-animation-delay: 0.349s;
+    -webkit-animation-delay: 0.349s;
+    -moz-animation-delay: 0.349s;
+}
+
+#fountainG_4 {
+    left: 85px;
+    animation-delay: 0.4055s;
+    -o-animation-delay: 0.4055s;
+    -ms-animation-delay: 0.4055s;
+    -webkit-animation-delay: 0.4055s;
+    -moz-animation-delay: 0.4055s;
+}
+
+#fountainG_5 {
+    left: 114px;
+    animation-delay: 0.472s;
+    -o-animation-delay: 0.472s;
+    -ms-animation-delay: 0.472s;
+    -webkit-animation-delay: 0.472s;
+    -moz-animation-delay: 0.472s;
+}
+
+#fountainG_6 {
+    left: 142px;
+    animation-delay: 0.5285s;
+    -o-animation-delay: 0.5285s;
+    -ms-animation-delay: 0.5285s;
+    -webkit-animation-delay: 0.5285s;
+    -moz-animation-delay: 0.5285s;
+}
+
+#fountainG_7 {
+    left: 171px;
+    animation-delay: 0.585s;
+    -o-animation-delay: 0.585s;
+    -ms-animation-delay: 0.585s;
+    -webkit-animation-delay: 0.585s;
+    -moz-animation-delay: 0.585s;
+}
+
+#fountainG_8 {
+    left: 199px;
+    animation-delay: 0.6415s;
+    -o-animation-delay: 0.6415s;
+    -ms-animation-delay: 0.6415s;
+    -webkit-animation-delay: 0.6415s;
+    -moz-animation-delay: 0.6415s;
+}
+
+@keyframes bounce_fountainG {
+    0% {
+        transform: scale(1);
+        background-color: rgba(214, 176, 120, 0.5);
+    }
+
+    100% {
+        transform: scale(0.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-o-keyframes bounce_fountainG {
+    0% {
+        -o-transform: scale(1);
+        background-color: rgba(214, 176, 120, 0.5);
+    }
+
+    100% {
+        -o-transform: scale(0.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-ms-keyframes bounce_fountainG {
+    0% {
+        -ms-transform: scale(1);
+        background-color: rgba(214, 176, 120, 0.5);
+    }
+
+    100% {
+        -ms-transform: scale(0.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-webkit-keyframes bounce_fountainG {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: rgba(214, 176, 120, 0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(0.3);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@-moz-keyframes bounce_fountainG {
+    0% {
+        -moz-transform: scale(1);
+        background-color: rgba(214, 176, 120, 0.5);
+    }
+
+    100% {
+        -moz-transform: scale(0.3);
+        background-color: rgb(255, 255, 255);
+    }
+}

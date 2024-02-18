@@ -1,0 +1,1038 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;600;700&display=swap");
+
+// External Libraries
+@import "@flaticon/flaticon-uicons/css/all/all.css";
+@import "bootstrap/scss/bootstrap.scss";
+
+// Custom Variables and Mixins
+@import "variables";
+@import "mixins";
+@import "loading";
+
+// Reset and Global Styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: rgba(0, 128, 128, 0.531);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 16px;
+}
+
+// Headings
+h1 {
+  font-family: $heading-font;
+  font-size: 46px;
+}
+
+// Common Styles
+%before_after {
+  position: absolute;
+  content: "";
+}
+
+%nav_common {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 1.2vw;
+
+      @include medium-desktop {
+        font-size: 16px;
+      }
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+%title_font {
+  font-size: 3vw;
+
+  @include tablet {
+    font-size: 4vw;
+  }
+
+  @include mobile {
+    font-size: 6vw;
+  }
+}
+
+// Section Titles
+.section__title,
+%section_title {
+  position: relative;
+  margin: 20px 0;
+  font-weight: 400;
+  font-family: $heading-font;
+  color: $dark;
+  font-size: 3vw;
+  @include medium-desktop {
+    font-size: 35px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+  }
+
+  &::before {
+    @extend %before_after;
+    bottom: -15px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $logo-color;
+
+    @include medium-desktop {
+      bottom: -10px;
+    }
+
+    @include mobile {
+      bottom: -7px;
+    }
+  }
+
+  @include small-desktop {
+    display: inline-block;
+  }
+}
+
+// Swiper Styles
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+// Primary Button Styles
+.primary__btn {
+  position: relative;
+  background-color: transparent;
+  color: $white;
+  border: 2px solid $logo-color;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 1.5vw;
+
+  @include medium-desktop {
+    font-size: 18px;
+  }
+
+  @include small-desktop {
+    font-size: 16px;
+  }
+
+  @include mobile {
+    font-size: 4vw;
+  }
+
+  &::before,
+  &::after {
+    @extend %before_after;
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    transition: 0.3s all ease;
+  }
+
+  &::before {
+    top: -2px;
+    left: 0;
+  }
+
+  &::after {
+    bottom: -2px;
+    right: 0;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    padding: 10px 40px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: $logo-color;
+    transition: 0.3s all ease-in-out;
+
+    @include medium-desktop {
+      font-size: 18px;
+    }
+
+    @include small-desktop {
+      font-size: 16px;
+      padding: 8px 30px;
+    }
+
+    @include mobile {
+      font-size: 4vw;
+    }
+
+    &::before,
+    &::after {
+      @extend %before_after;
+      width: 2px;
+      background-image: linear-gradient(to bottom, $dark, $white, $logo-color);
+      transition: 0.3s all ease;
+    }
+
+    &::before {
+      left: -2px;
+      height: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      right: -2px;
+      height: 0;
+      top: 0;
+    }
+  }
+
+  &:hover {
+    &::before,
+    &:after {
+      width: 100%;
+    }
+
+    a {
+      color: $white;
+
+      &::before,
+      &:after {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Secondary button Styles
+.secondary__btn {
+  border: 2px;
+  background-color: $logo-color;
+  padding: 10px 40px;
+  a {
+    color: $dark;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5vw;
+
+    @include medium-desktop {
+      font-size: 18px;
+    }
+
+    @include small-desktop {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 4vw;
+    }
+  }
+}
+// Main Content Styles
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.6vw 5.2vw;
+  pointer-events: auto;
+}
+
+// Header Styles
+.header {
+  background-color: $background;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .wrapper {
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include tablet {
+      display: block;
+      z-index: 4;
+    }
+  }
+
+  &__mobile {
+    &--nav {
+      background-color: transparent;
+      color: $white;
+      border: 0;
+      outline: none;
+      font-size: 20px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    a {
+      display: block;
+      height: 70px;
+
+      @include medium-desktop {
+        width: 70px;
+      }
+
+      @include small-desktop {
+        width: 60px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__nav {
+    @include tablet {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease-in;
+      opacity: 0;
+      text-align: right;
+    }
+
+    ul {
+      @extend %nav_common;
+
+      li {
+        @include tablet {
+          display: block;
+          padding: 5px 0;
+          margin-right: 0 !important;
+        }
+
+        a {
+          position: relative;
+          transition: 0.3s ease-in-out;
+
+          &::after {
+            @extend %before_after;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover,
+          &.active {
+            color: $logo-color;
+
+            &::after {
+              width: 80%;
+              background-color: $logo-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    @include tablet {
+      overflow: hidden;
+      transition: all 0.3s ease-in;
+      opacity: 0;
+      position: absolute;
+      top: 20px;
+      left: -100%;
+      transform: translateX(-50%) scale(0);
+    }
+
+    ul {
+      @extend %nav_common;
+
+      li {
+        a {
+          text-align: center;
+
+          i {
+            transition: all 0.3s ease-in-out;
+            line-height: 0.5;
+
+            &:hover {
+              color: $logo-color;
+            }
+          }
+        }
+      }
+
+      @include tablet {
+        li {
+          margin-right: 0 !important;
+          padding: 0 7px;
+        }
+      }
+    }
+  }
+
+  &.active {
+    .header {
+      &__nav {
+        @include tablet {
+          max-height: 100px;
+          height: 100%;
+          opacity: 1;
+        }
+      }
+
+      &__social {
+        @include tablet {
+          transform: scale(1);
+          left: 50%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Home Section Styles
+.home {
+  background-color: $background;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  &__des {
+    background-color: $background;
+    text-align: center;
+    .wrapper {
+      @include tablet {
+        padding-top: 0;
+      }
+    }
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    z-index: -1;
+
+    @include medium-desktop {
+      width: 50%;
+    }
+
+    @include tablet {
+      width: 450px;
+      position: relative;
+      margin: 0 auto;
+    }
+    @include mobile {
+      width: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    text-align: left;
+
+    @include tablet {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    h1 {
+      @extend %title_font;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        @extend %before_after;
+        bottom: -10px;
+        width: 100%;
+        background-color: $logo-color;
+        height: 3px;
+        border-radius: 5px;
+        z-index: 1;
+        @include mobile {
+          width: 200px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  &__designation {
+    @include tablet {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 10vw;
+      font-family: $heading-font;
+      color: $white;
+      font-weight: 400;
+      letter-spacing: -10px;
+      line-height: 0.8;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px;
+
+      @include medium-desktop {
+        letter-spacing: -10px;
+      }
+
+      @include small-desktop {
+        letter-spacing: -5px;
+      }
+
+      @include mobile {
+        font-size: 15vw;
+      }
+
+      span {
+        display: block;
+        margin-left: 160px;
+
+        @include medium-desktop {
+          margin-left: 85px;
+        }
+
+        @include small-desktop {
+          margin-left: 75px;
+        }
+
+        @include tablet {
+          margin: 0;
+        }
+
+        &:nth-child(odd) {
+          margin-left: 25px;
+
+          @include tablet {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__company {
+    margin-bottom: 2vw;
+    @include tablet {
+      text-align: center;
+      margin-bottom: 3vw;
+    }
+    @include mobile {
+      margin-bottom: 5vw;
+    }
+    h3 {
+      @extend %title_font;
+      font-family: $heading-font;
+      color: $logo-color;
+      margin-bottom: 0;
+      margin-top: 10px;
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: $white;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        bottom: -10px;
+        @include tablet {
+          width: 250px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        @include mobile {
+          bottom: -10px;
+        }
+      }
+    }
+  }
+
+  &__details {
+    padding-top: 20px;
+    @include tablet {
+      padding-top: 0;
+    }
+    p {
+      font-size: 1.5vw;
+      font-weight: 400;
+      color: $white;
+
+      @include medium-desktop {
+        font-size: 16px;
+      }
+
+      @include mobile {
+        font-weight: 400;
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
+// AboutAbout Section Styles
+.about {
+  background-color: $whiteBg;
+  position: relative;
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .swiper-slide {
+    a {
+      display: block;
+      height: 105px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom center;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+
+    @include small-desktop {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &--right {
+      flex-basis: 60%;
+      width: 60%;
+      padding: 2.5vw 2vw;
+      align-self: center;
+      @include medium-desktop {
+        width: 50%;
+        flex-basis: 50%;
+        padding: 2vw 4vw;
+      }
+
+      @include small-desktop {
+        width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2vw;
+    color: $dark;
+
+    @include medium-desktop {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  &__image {
+    width: 40%;
+
+    @include medium-desktop {
+      width: 50%;
+    }
+
+    @include small-desktop {
+      width: 60%;
+      max-height: 550px;
+      margin: 0 auto;
+      border-radius: 5px;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+    @include tablet {
+      width: 450px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include tablet {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// History
+.history {
+  background-color: $background;
+
+  &__image {
+    width: 40%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include small-desktop {
+        object-position: top;
+      }
+
+      @include tablet {
+        border-radius: 10px;
+      }
+    }
+    @include small-desktop {
+      padding: 1.6vw 4.2vw;
+      max-width: 400px;
+      width: 100%;
+      height: 400px;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+
+    @include mobile {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: stretch;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: $whiteBg;
+      @include small-desktop {
+        flex-direction: column;
+      }
+      .history {
+        &__description {
+          padding-left: 2vw;
+          padding-right: 2vw;
+          @include medium-desktop {
+            padding: 2vw 4vw;
+          }
+          &--top {
+            a {
+              color: $dark;
+            }
+          }
+          &--main {
+            h4,
+            p {
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+
+    @include small-desktop {
+      flex-direction: column;
+    }
+  }
+  &__description {
+    width: 60%;
+    align-self: center;
+    padding: 2vw;
+    @include medium-desktop {
+      padding: 2vw 4vw;
+    }
+
+    @include small-desktop {
+      width: 100%;
+      padding-bottom: 2vw;
+    }
+
+    &--top {
+      margin-bottom: 20px;
+      h3 {
+        font-size: 2vw;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: $logo-color;
+
+        @include medium-desktop {
+          font-size: 2.2vw;
+        }
+
+        @include small-desktop {
+          font-size: 25px;
+        }
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: $heading-font;
+        color: $white;
+        font-size: 3.8vw;
+        font-weight: 400;
+        line-height: 1;
+
+        @include medium-desktop {
+          letter-spacing: -2px;
+          line-height: 0.8;
+          padding: 5px 0;
+        }
+
+        @include small-desktop {
+          font-size: 35px;
+        }
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 2vw;
+        color: $logo-color;
+        font-weight: 400;
+        margin-bottom: 0;
+        line-height: 1;
+
+        @include medium-desktop {
+          font-size: 2.2vw;
+        }
+
+        @include small-desktop {
+          font-size: 25px;
+        }
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &--main {
+      h4 {
+        font-weight: 600;
+        color: $whiteBg;
+        font-size: 1.8vw;
+        margin-bottom: 5px;
+        @include medium-desktop {
+          font-size: 2.5vw;
+        }
+
+        @include small-desktop {
+          font-size: 25px;
+        }
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 1.2vw;
+        color: $white;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @include medium-desktop {
+          font-size: 16px;
+        }
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Company
+.company {
+  background-color: $background;
+  &__desc {
+    color: $white;
+    font-size: 1.2vw;
+    @include medium-desktop {
+      font-size: 18px;
+    }
+    @include small-desktop {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+  &__wrapper {
+    background-color: $whiteBg;
+    padding: 3vw 0;
+  }
+
+  &__container {
+    font-size: 1vw;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lighten($color: $whiteBg, $amount: 10);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+      @extend %before_after;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: darken($color: $whiteBg, $amount: 3);
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+  .col-lg-4 {
+    @for $i from 4 through 7 {
+      &:nth-child(#{$i}) {
+        .company__container {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__logo {
+    display: block;
+    overflow: hidden;
+    width: 120px;
+    height: 100px;
+    margin-right: 20px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+  &__text {
+    p {
+      margin-bottom: 0;
+      font-size: 1.2vw;
+      font-weight: 700;
+      @include medium-desktop {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.company__container {
+  @for $i from 4 through 7 {
+    &:nth-child(#{$i}) {
+      margin-bottom: 100px;
+    }
+  }
+}
+// Footer
+.footer {
+  text-align: center;
+  background-color: $background;
+  color: $white;
+  padding: 20px 15px;
+  border-top: 1px solid #373737;
+  p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    @include medium-desktop {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

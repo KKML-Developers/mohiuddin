@@ -1,0 +1,47 @@
+{
+    "about": {
+        "aboutImage": "https://res.cloudinary.com/dfaw271y6/image/upload/v1708241872/Founder_sir1_kcly2d.jpg",
+        "aboutAlt": "Mr. Mohiuddin ahmad, khoshroz kitab mahal",
+        "aboutTitle": "Biography",
+        "biography": [
+            "In addition to his involvement in the publication industry, Mr. Jamal is also involved in various other businesses, such as Magura Paper Mills Ltd, Bangladesh Monospool Paper Manufacturing Company Ltd, and Paper Processing & Packaging Ltd. He has also established a sole proprietorship business called Jatiya Mudran.",
+            "As the Vice-Chairman of Khoshroz Kitab Mahal and NDC Auto Brick, Mr. Jamal is highly regarded for his business acumen and leadership skills. Under his guidance, these companies have continued to grow and expand, offering high-quality products and services to their customers.",
+            "With his background in international education and years of experience in the business world, Mr. Jamal is a valuable asset to the companies he is involved in. He is known for his hard-working and motivated approach, as well as his ability to effectively manage and lead teams.",
+            "As he continues to drive the success of these companies, Mr. Jamal is dedicated to making a positive impact on the lives of people in Bangladesh, both through his business ventures and his community involvement."
+        ]
+    },
+    "brands": {
+        "brandLogos": [
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1706095347/logos/uyf1pglq390hzxt9hd7m.png",
+                "alt": "Khoshroz Kitab Mahal",
+                "url": "https://www.khoshrozltd.com/"
+            },
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1708175938/logos/mg-logo-2_a8dile.png",
+                "alt": "Magura Group",
+                "url": "https://www.maguragroup.com.bd/"
+            },
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1708175938/logos/ppp-2_ehjmur.png",
+                "alt": "Paper processing and packaging limited",
+                "url": "https://www.pppl.com.bd/"
+            },
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1708175938/logos/monospool-2_mpyuuq.png",
+                "alt": "Bangladesh monospool paper mfg. co. LTD.",
+                "url": "https://www.mpmc.com.bd/"
+            },
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1706095347/logos/kumlejxzmmgiif9znjge.png",
+                "alt": "National Development Company Limited",
+                "url": "https://www.ndcautobrick.com/"
+            },
+            {
+                "logo": "https://res.cloudinary.com/dfaw271y6/image/upload/v1706095347/logos/fmiafw7diltwfrwsafvz.png",
+                "alt": "Jatiya Mudran",
+                "url": "https://www.jatiyamudran.com/"
+            }
+        ]
+    }
+}
