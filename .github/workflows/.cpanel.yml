@@ -28,6 +28,6 @@ jobs:
         with:
           server: "ftp.mohiuddinahahmad.com"
           username: "mohiuddin2"
-          password: "${{ secrets.FTP_PASSWORD }}"
+          password: "${{ secrets.FTP_2 }}"
           protocol: "ftp"
           local-dir: ./dist/
