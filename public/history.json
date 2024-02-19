@@ -2,8 +2,8 @@
     "history": [
         {
             "name": "Mr. Mustafa Kamal Mohiuddin",
-            "designation": "Honorable Chairman",
-            "webUrl": "# ",
+            "designation": "Honorable Group Chairman",
+            "webUrl": "#",
             "image": "https://res.cloudinary.com/dfaw271y6/image/upload/v1708236519/president_uyundj.png",
             "company": "Magura Group Limited",
             "descTitle": "Message from the Chairman",
@@ -29,19 +29,6 @@
             ]
         },
         {
-            "name": "Mr. Mostafa Akhter Mohiuddin",
-            "webUrl": "https://www.mostafaakhter.com/",
-            "designation": "Chairman",
-            "image": "https://res.cloudinary.com/dfaw271y6/image/upload/v1705831588/DMD_website/mostafa-akhter_ylwkbs.jpg",
-            "company": "Magura Agriculture Park Ltd and Dream International.",
-            "descTitle": "Background",
-            "description": [
-                "As a successful businessman, Mr. Mostafa Jarif Mohiuddin has made a name for himself in the fashion industry and continues to be a key figure in the family business. His vision and drive have helped to expand the operations of Khoshroz Kitab Mahal and NDC Auto Brick, while also establishing new ventures in the fashion industry and agriculture sector.",
-                "His role as the chairman of Magura Agriculture Park Ltd and Dream International further highlights his commitment to promoting sustainability and providing fresh, organic products to the people of Bangladesh.",
-                "Through his hard work and dedication, Mr. Mostafa Jarif Mohiuddin is making a positive impact on the community and helping to build a better future for Bangladesh."
-            ]
-        },
-        {
             "name": "Mr. Mostafa Jafir Mohiuddin",
             "webUrl": "https://www.mostafamohiuddin.com/",
             "designation": "Deputy Managing Director",
@@ -53,6 +40,19 @@
                 "It was through Mostafa’s work at his grandfather’s publishing company during the summers that he discovered his love for the paper industry and assumed a full-time job as Deputy Managing Director. Mostafa says he owes most of his business acumen to his grandfather, who gave him his foundational training. This knowledge, paired with his love of nature, inspired Mostafa to open a business with his brother in 2021: Magura Agriculture Park Limited. This organic agriculture farm allows a one-stop solution for people to reach farmers and fresh products with ease.",
                 "Most recently, Mostafa started a new company, Khaohroz Advanced Technology Ltd. His aim is to develop the IT industry in an effort to provide smarter, better IT services, including developing software websites, networking, etc. Often described as hardworking and highly motivated, Mostafa’s current plans include expanding the operational capacity of his businesses back in his home country.",
                 "In his spare time, Mostafa enjoys tending to cows, fish, and other animals. Ultimately, his goal is to give back to his hometown and make the lives of those who live there a bit easier. Mostafa wants everyone to spend more time following their passions and doing what they love, just like he does."
+            ]
+        },
+        {
+            "name": "Mr. Mostafa Akhter Mohiuddin",
+            "webUrl": "https://www.mostafaakhter.com/",
+            "designation": "Chairman",
+            "image": "https://res.cloudinary.com/dfaw271y6/image/upload/v1705831588/DMD_website/mostafa-akhter_ylwkbs.jpg",
+            "company": "Magura Agriculture Park Ltd and Dream International.",
+            "descTitle": "Background",
+            "description": [
+                "As a successful businessman, Mr. Mostafa Jarif Mohiuddin has made a name for himself in the fashion industry and continues to be a key figure in the family business. His vision and drive have helped to expand the operations of Khoshroz Kitab Mahal and NDC Auto Brick, while also establishing new ventures in the fashion industry and agriculture sector.",
+                "His role as the chairman of Magura Agriculture Park Ltd and Dream International further highlights his commitment to promoting sustainability and providing fresh, organic products to the people of Bangladesh.",
+                "Through his hard work and dedication, Mr. Mostafa Jarif Mohiuddin is making a positive impact on the community and helping to build a better future for Bangladesh."
             ]
         }
     ]
